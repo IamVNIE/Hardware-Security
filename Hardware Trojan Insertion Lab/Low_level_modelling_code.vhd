@@ -8,7 +8,7 @@
 -- Project Name: FPGA Trojan Detection
 -- Target Devices: 90nm Devices, 65nm-Virtex 5, 28nm-Virtex 7
 -- Tool versions: 
--- Description: This file describes a 5 stage ring oscillator in single slice.
+-- Description: This file describes a 7 stage ring oscillator in single slice.
 --
 -- Dependencies: 
 --
