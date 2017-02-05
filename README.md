@@ -1,5 +1,7 @@
 # Hardware-Security
 
+## Hardware Trojan Taxonomy
+ TRUSTHUB Presentation: https://www.trust-hub.org/taxonomyResources/Taxonomy.pdf
 ## Tutorials on Tool-Chain
 
 https://plus.google.com/u/3/116149208990386154836
