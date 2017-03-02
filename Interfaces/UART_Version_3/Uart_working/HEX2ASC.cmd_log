@@ -1,0 +1,1 @@
+vhdtdtfi -prj Vin -o C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/HEX2ASC.vhi -module HEX2ASC -template C:/Documents/Xilinx/14.7/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror -lib work HEX2ASC.vhd 

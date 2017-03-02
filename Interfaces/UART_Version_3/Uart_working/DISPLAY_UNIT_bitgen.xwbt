@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\DISPLAY_UNIT.ncd
+OUTFILE=C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\DISPLAY_UNIT.bit
+FAMILY=Artix7
+PART=xc7a100t-3csg324
+WORKINGDIR=C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin
+LICENSE=WebPack
+USER_INFO=210852548_0_0_752

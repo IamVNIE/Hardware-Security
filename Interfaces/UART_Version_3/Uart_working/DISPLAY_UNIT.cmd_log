@@ -1,0 +1,225 @@
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -p xc3s500e-fg320-5 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc3s500e-fg320-5 -cm area -ir off -pr off -c 100 -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -t 1 DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 5 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc C:/Users/Steyr/Documents/DP1Lab0/Lab3/Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc C:/Users/Steyr/Documents/DP1Lab0/Lab3/Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc C:/Users/Steyr/Documents/DP1Lab0/Lab3/Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc DISPLAY_UNIT.ucf -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf DISPLAY_UNIT.ucf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+xst -intstyle ise -ifn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.xst" -ofn "C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/DISPLAY_UNIT.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Nexys4DDR_Master.ucf -p xc7a100t-csg324-3 DISPLAY_UNIT.ngc DISPLAY_UNIT.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ngd DISPLAY_UNIT.pcf 
+par -w -intstyle ise -ol high -mt off DISPLAY_UNIT_map.ncd DISPLAY_UNIT.ncd DISPLAY_UNIT.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml DISPLAY_UNIT.twx DISPLAY_UNIT.ncd -o DISPLAY_UNIT.twr DISPLAY_UNIT.pcf -ucf Nexys4DDR_Master.ucf 
+bitgen -intstyle ise -f DISPLAY_UNIT.ut DISPLAY_UNIT.ncd 

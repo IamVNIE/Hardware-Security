@@ -1,0 +1,29 @@
+Command line:
+   Rs232RefComp_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  63696
+
+Sat May 07 11:42:06 2016
+
+
+ Elaboration Time: 0.03125 sec
+
+ Current Memory Usage: 844.358 Meg
+
+ Total Signals          : 44
+ Total Nets             : 237
+ Total Signal Drivers   : 37
+ Total Blocks           : 4
+ Total Primitive Blocks : 4
+ Total Processes        : 23
+ Total Traceable Variables  : 11
+ Total Scalar Nets and Variables : 623
+Total Line Count : 132
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 687.071 Meg
+
+Sat May 07 11:49:22 2016
+

@@ -1,0 +1,1299 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.08 secs
+ 
+--> Reading design: DISPLAY_UNIT.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "DISPLAY_UNIT.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "DISPLAY_UNIT"
+Output Format                      : NGC
+Target Device                      : xc7a100t-3-csg324
+
+---- Source Options
+Top Module Name                    : DISPLAY_UNIT
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\RS232RefComp.vhd" into library work
+Parsing entity <Rs232RefComp>.
+Parsing architecture <Behavioral> of entity <rs232refcomp>.
+Parsing VHDL file "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\hex2LED - Copy.vhd" into library work
+Parsing entity <Dec2LED>.
+Parsing architecture <Behavioral> of entity <dec2led>.
+Parsing VHDL file "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\HEX2ASC.vhd" into library work
+Parsing entity <HEX2ASC>.
+Parsing architecture <Behavioral> of entity <hex2asc>.
+Parsing VHDL file "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\Circuit17.vhd" into library work
+Parsing entity <Circuit17>.
+Parsing architecture <Behavioral> of entity <circuit17>.
+Parsing VHDL file "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\ascii_hex.vhd" into library work
+Parsing entity <ascii_hex>.
+Parsing architecture <Behavioral> of entity <ascii_hex>.
+Parsing VHDL file "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\des_decrypt_wit_out - Copy.vhd" into library work
+Parsing entity <DISPLAY_UNIT>.
+Parsing architecture <behavior> of entity <display_unit>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <DISPLAY_UNIT> (architecture <behavior>) with generics from library <work>.
+WARNING:HDLCompiler:871 - "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\des_decrypt_wit_out - Copy.vhd" Line 122: Using initial value '1' for rosel since it is never assigned
+
+Elaborating entity <Rs232RefComp> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Circuit17> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\Circuit17.vhd" Line 61: g6 should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\Circuit17.vhd" Line 62: g23t should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\Circuit17.vhd" Line 63: g6 should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\Circuit17.vhd" Line 63. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:1127 - "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\des_decrypt_wit_out - Copy.vhd" Line 235: Assignment to count1 ignored, since the identifier is never used
+
+Elaborating entity <ascii_hex> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\ascii_hex.vhd" Line 46: ascii should be on the sensitivity list of the process
+WARNING:HDLCompiler:1127 - "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\des_decrypt_wit_out - Copy.vhd" Line 271: Assignment to rst_temp ignored, since the identifier is never used
+
+Elaborating entity <HEX2ASC> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\HEX2ASC.vhd" Line 18: val should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\HEX2ASC.vhd" Line 35. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\des_decrypt_wit_out - Copy.vhd" Line 464: gex should be on the sensitivity list of the process
+
+Elaborating entity <Dec2LED> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\hex2LED - Copy.vhd" Line 15: x should be on the sensitivity list of the process
+WARNING:HDLCompiler:634 - "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\des_decrypt_wit_out - Copy.vhd" Line 97: Net <dbOutSig2[7]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\des_decrypt_wit_out - Copy.vhd" Line 110: Net <ro[63]> does not have a driver.
+WARNING:Xst:2972 - "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\des_decrypt_wit_out - Copy.vhd" line 259. All outputs of instance <H1> of block <ascii_hex> are unconnected in block <DISPLAY_UNIT>. Underlying logic will be removed.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <DISPLAY_UNIT>.
+    Related source file is "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\des_decrypt_wit_out - Copy.vhd".
+        N = 20
+        M = 5
+INFO:Xst:3210 - "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\des_decrypt_wit_out - Copy.vhd" line 206: Output port <PE> of the instance <UART> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\des_decrypt_wit_out - Copy.vhd" line 206: Output port <FE> of the instance <UART> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\des_decrypt_wit_out - Copy.vhd" line 206: Output port <OE> of the instance <UART> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\des_decrypt_wit_out - Copy.vhd" line 259: Output port <hex> of the instance <H1> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <dbOutSig2> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <dbOutSig3> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <ro<63:32>> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Found 1-bit register for signal <rdSig>.
+    Found 1-bit register for signal <wrSig>.
+    Found 4-bit register for signal <count>.
+    Found 32-bit register for signal <countR>.
+    Found 32-bit register for signal <count_RO_t>.
+    Found 4-bit register for signal <state>.
+    Found 8-bit register for signal <dbInSig>.
+    Found 5-bit register for signal <Rflag>.
+    Found 20-bit register for signal <tv>.
+    Found 32-bit register for signal <count_RO>.
+    Found 3-bit register for signal <st_indicator>.
+    Found 1-bit register for signal <CLKM>.
+    Found 32-bit register for signal <Z>.
+    Found 8-bit register for signal <TMPDGT<0>>.
+    Found 8-bit register for signal <TMPDGT<1>>.
+    Found 8-bit register for signal <TMPDGT<2>>.
+    Found 8-bit register for signal <TMPDGT<3>>.
+    Found 32-bit register for signal <NAMEA>.
+    Found 32-bit register for signal <NAMEB>.
+    Found 32-bit register for signal <NAMEC>.
+    Found 32-bit register for signal <NAMED>.
+    Found 32-bit register for signal <G>.
+    Found 4-bit register for signal <TEMP>.
+    Found 8-bit register for signal <DIGIT>.
+    Found 32-bit register for signal <big_counter>.
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 10                                             |
+    | Transitions        | 19                                             |
+    | Inputs             | 8                                              |
+    | Outputs            | 9                                              |
+    | Clock              | clk (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | idle                                           |
+    | Power Up State     | idle                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_1> for signal <TEMP>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 7                                              |
+    | Clock              | CLKM (rising_edge)                             |
+    | Power Up State     | 0111                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 32-bit adder for signal <big_counter[31]_GND_6_o_add_1_OUT> created at line 130.
+    Found 32-bit adder for signal <countR[31]_GND_6_o_add_9_OUT> created at line 230.
+    Found 32-bit adder for signal <count_RO_t[31]_GND_6_o_add_13_OUT> created at line 241.
+    Found 5-bit adder for signal <Rflag[4]_GND_6_o_add_38_OUT> created at line 340.
+    Found 4-bit adder for signal <count[3]_GND_6_o_add_78_OUT> created at line 404.
+    Found 32-bit adder for signal <Z[31]_GND_6_o_add_105_OUT> created at line 440.
+    Found 32-bit adder for signal <NAMEA[31]_GND_6_o_add_122_OUT> created at line 489.
+    Found 32-bit adder for signal <NAMEB[31]_GND_6_o_add_126_OUT> created at line 495.
+    Found 32-bit adder for signal <NAMEC[31]_GND_6_o_add_130_OUT> created at line 501.
+    Found 32-bit adder for signal <NAMED[31]_GND_6_o_add_134_OUT> created at line 507.
+    Found 32-bit adder for signal <G[31]_GND_6_o_add_136_OUT> created at line 511.
+    Found 16x7-bit Read Only RAM for signal <seg_out>
+    Found 8x8-bit Read Only RAM for signal <dis>
+    Found 8-bit 13-to-1 multiplexer for signal <NAMEA[3]_NAME[15][7]_wide_mux_120_OUT> created at line 485.
+    Found 8-bit 13-to-1 multiplexer for signal <NAMEB[3]_NAME[15][7]_wide_mux_124_OUT> created at line 491.
+    Found 8-bit 13-to-1 multiplexer for signal <NAMEC[3]_NAME[15][7]_wide_mux_128_OUT> created at line 497.
+    Found 8-bit 13-to-1 multiplexer for signal <NAMED[3]_NAME[15][7]_wide_mux_132_OUT> created at line 503.
+    Found 32-bit comparator greater for signal <countR[31]_GND_6_o_LessThan_9_o> created at line 229
+    Found 8-bit comparator greater for signal <n0037> created at line 305
+    Found 8-bit comparator greater for signal <n0040> created at line 309
+    Found 4-bit comparator greater for signal <PWR_6_o_count[3]_LessThan_80_o> created at line 407
+    Summary:
+	inferred   2 RAM(s).
+	inferred  11 Adder/Subtractor(s).
+	inferred 403 D-type flip-flop(s).
+	inferred   4 Comparator(s).
+	inferred  50 Multiplexer(s).
+	inferred   2 Finite State Machine(s).
+Unit <DISPLAY_UNIT> synthesized.
+
+Synthesizing Unit <Rs232RefComp>.
+    Related source file is "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\RS232RefComp.vhd".
+    Found 1-bit register for signal <rClk>.
+    Found 4-bit register for signal <rClkDiv>.
+    Found 4-bit register for signal <ctr>.
+    Found 4-bit register for signal <tfCtr>.
+    Found 1-bit register for signal <FE>.
+    Found 1-bit register for signal <OE>.
+    Found 1-bit register for signal <RDA>.
+    Found 1-bit register for signal <PE>.
+    Found 8-bit register for signal <rdReg>.
+    Found 10-bit register for signal <rdSReg>.
+    Found 4-bit register for signal <dataCtr>.
+    Found 2-bit register for signal <strCur>.
+    Found 2-bit register for signal <stbeCur>.
+    Found 11-bit register for signal <tfSReg>.
+    Found 2-bit register for signal <sttCur>.
+    Found 9-bit register for signal <clkDiv>.
+    Found finite state machine <FSM_2> for signal <strCur>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 7                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | rClk (rising_edge)                             |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | stridle                                        |
+    | Power Up State     | stridle                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_3> for signal <stbeCur>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | CLK (rising_edge)                              |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | stbeidle                                       |
+    | Power Up State     | stbeidle                                       |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found finite state machine <FSM_4> for signal <sttCur>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 5                                              |
+    | Inputs             | 2                                              |
+    | Outputs            | 2                                              |
+    | Clock              | tClk (rising_edge)                             |
+    | Reset              | RST (positive)                                 |
+    | Reset type         | synchronous                                    |
+    | Reset State        | sttidle                                        |
+    | Power Up State     | sttidle                                        |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit adder for signal <clkDiv[8]_GND_7_o_add_3_OUT> created at line 123.
+    Found 4-bit adder for signal <rClkDiv[3]_GND_7_o_add_7_OUT> created at line 142.
+    Found 4-bit adder for signal <ctr[3]_GND_7_o_add_9_OUT> created at line 154.
+    Found 4-bit adder for signal <tfCtr[3]_GND_7_o_add_12_OUT> created at line 165.
+    Found 4-bit adder for signal <dataCtr[3]_GND_7_o_add_20_OUT> created at line 206.
+    Found 1-bit 4-to-1 multiplexer for signal <ctRst> created at line 227.
+WARNING:Xst:737 - Found 1-bit latch for signal <TBE>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   5 Adder/Subtractor(s).
+	inferred  59 D-type flip-flop(s).
+	inferred   1 Latch(s).
+	inferred   4 Multiplexer(s).
+	inferred   3 Finite State Machine(s).
+Unit <Rs232RefComp> synthesized.
+
+Synthesizing Unit <Circuit17>.
+    Related source file is "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\Circuit17.vhd".
+    Set property "INIT = 7" for instance <G10_lut>.
+    Set property "LOC = SLICE_X18Y14" for instance <G10_lut>.
+    Set property "INIT = 7" for instance <G11_lut>.
+    Set property "LOC = SLICE_X19Y14" for instance <G11_lut>.
+    Set property "INIT = 7" for instance <G16_lut>.
+    Set property "LOC = SLICE_X20Y14" for instance <G16_lut>.
+    Set property "INIT = 7" for instance <G19_lut>.
+    Set property "LOC = SLICE_X21Y14" for instance <G19_lut>.
+    Set property "INIT = 7" for instance <G22_lut>.
+    Set property "LOC = SLICE_X22Y14" for instance <G22_lut>.
+    Set property "INIT = 7" for instance <G23_lut>.
+    Set property "LOC = SLICE_X23Y14" for instance <G23_lut>.
+    Set property "KEEP = TRUE" for signal <G10>.
+    Set property "KEEP = TRUE" for signal <G11>.
+    Set property "KEEP = TRUE" for signal <G16>.
+    Set property "KEEP = TRUE" for signal <G19>.
+    Set property "KEEP = TRUE" for signal <G6t>.
+    Set property "KEEP = TRUE" for signal <G23t>.
+WARNING:Xst:647 - Input <ROSEL> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Summary:
+	inferred   1 Multiplexer(s).
+Unit <Circuit17> synthesized.
+
+Synthesizing Unit <HEX2ASC>.
+    Related source file is "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\HEX2ASC.vhd".
+WARNING:Xst:647 - Input <CLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16x8-bit Read Only RAM for signal <Y>
+    Summary:
+	inferred   1 RAM(s).
+Unit <HEX2ASC> synthesized.
+
+Synthesizing Unit <Dec2LED>.
+    Related source file is "C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\hex2LED - Copy.vhd".
+WARNING:Xst:647 - Input <CLK> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 16x8-bit Read Only RAM for signal <Y>
+    Summary:
+	inferred   1 RAM(s).
+Unit <Dec2LED> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 14
+ 16x7-bit single-port Read Only RAM                    : 1
+ 16x8-bit single-port Read Only RAM                    : 12
+ 8x8-bit single-port Read Only RAM                     : 1
+# Adders/Subtractors                                   : 16
+ 32-bit adder                                          : 9
+ 4-bit adder                                           : 5
+ 5-bit adder                                           : 1
+ 9-bit adder                                           : 1
+# Registers                                            : 36
+ 1-bit register                                        : 8
+ 10-bit register                                       : 1
+ 11-bit register                                       : 1
+ 20-bit register                                       : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 10
+ 4-bit register                                        : 5
+ 5-bit register                                        : 1
+ 8-bit register                                        : 7
+ 9-bit register                                        : 1
+# Latches                                              : 1
+ 1-bit latch                                           : 1
+# Comparators                                          : 4
+ 32-bit comparator greater                             : 1
+ 4-bit comparator greater                              : 1
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 55
+ 1-bit 2-to-1 multiplexer                              : 15
+ 1-bit 4-to-1 multiplexer                              : 1
+ 11-bit 2-to-1 multiplexer                             : 1
+ 20-bit 2-to-1 multiplexer                             : 2
+ 32-bit 2-to-1 multiplexer                             : 1
+ 4-bit 2-to-1 multiplexer                              : 17
+ 5-bit 2-to-1 multiplexer                              : 1
+ 8-bit 13-to-1 multiplexer                             : 4
+ 8-bit 2-to-1 multiplexer                              : 13
+# FSMs                                                 : 5
+# Xors                                                 : 2
+ 1-bit xor8                                            : 1
+ 1-bit xor9                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <DISPLAY_UNIT>.
+The following registers are absorbed into counter <big_counter>: 1 register on signal <big_counter>.
+The following registers are absorbed into counter <Z>: 1 register on signal <Z>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <countR>: 1 register on signal <countR>.
+The following registers are absorbed into counter <Rflag>: 1 register on signal <Rflag>.
+The following registers are absorbed into counter <G>: 1 register on signal <G>.
+The following registers are absorbed into counter <NAMEA>: 1 register on signal <NAMEA>.
+The following registers are absorbed into counter <NAMEB>: 1 register on signal <NAMEB>.
+The following registers are absorbed into counter <NAMEC>: 1 register on signal <NAMEC>.
+The following registers are absorbed into counter <NAMED>: 1 register on signal <NAMED>.
+The following registers are absorbed into counter <count_RO_t>: 1 register on signal <count_RO_t>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_dis> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 8-bit                      |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <big_counter>   |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <dis>           |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_seg_out> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 7-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <temps>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <seg_out>       |          |
+    -----------------------------------------------------------------------
+Unit <DISPLAY_UNIT> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Dec2LED>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Y> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <X>             |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Y>             |          |
+    -----------------------------------------------------------------------
+Unit <Dec2LED> synthesized (advanced).
+
+Synthesizing (advanced) Unit <HEX2ASC>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram_Y> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 16-word x 8-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <VAL>           |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <Y>             |          |
+    -----------------------------------------------------------------------
+Unit <HEX2ASC> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Rs232RefComp>.
+The following registers are absorbed into counter <clkDiv>: 1 register on signal <clkDiv>.
+The following registers are absorbed into counter <rClkDiv>: 1 register on signal <rClkDiv>.
+The following registers are absorbed into counter <ctr>: 1 register on signal <ctr>.
+The following registers are absorbed into counter <tfCtr>: 1 register on signal <tfCtr>.
+The following registers are absorbed into counter <dataCtr>: 1 register on signal <dataCtr>.
+Unit <Rs232RefComp> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 14
+ 16x7-bit single-port distributed Read Only RAM        : 1
+ 16x8-bit single-port distributed Read Only RAM        : 12
+ 8x8-bit single-port distributed Read Only RAM         : 1
+# Counters                                             : 16
+ 32-bit up counter                                     : 9
+ 4-bit up counter                                      : 5
+ 5-bit up counter                                      : 1
+ 9-bit up counter                                      : 1
+# Registers                                            : 140
+ Flip-Flops                                            : 140
+# Comparators                                          : 4
+ 32-bit comparator greater                             : 1
+ 4-bit comparator greater                              : 1
+ 8-bit comparator greater                              : 2
+# Multiplexers                                         : 51
+ 1-bit 2-to-1 multiplexer                              : 14
+ 1-bit 4-to-1 multiplexer                              : 1
+ 11-bit 2-to-1 multiplexer                             : 1
+ 20-bit 2-to-1 multiplexer                             : 2
+ 4-bit 2-to-1 multiplexer                              : 16
+ 8-bit 13-to-1 multiplexer                             : 4
+ 8-bit 2-to-1 multiplexer                              : 13
+# FSMs                                                 : 5
+# Xors                                                 : 2
+ 1-bit xor8                                            : 1
+ 1-bit xor9                                            : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_1> on signal <TEMP[1:4]> with user encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0111  | 0111
+ 1110  | 1110
+ 1101  | 1101
+ 1011  | 1011
+-------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <state[1:4]> with user encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ idle        | 0000
+ cnt         | 0001
+ receive     | 0010
+ decide      | 0011
+ send1       | 0100
+ send2       | 0101
+ stinput     | 0110
+ stoutput    | 0111
+ test_vector | 1000
+ displayi    | 1001
+-------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <UART/FSM_2> on signal <strCur[1:2]> with user encoding.
+---------------------------
+ State         | Encoding
+---------------------------
+ stridle       | 00
+ streightdelay | 01
+ strgetdata    | 10
+ strcheckstop  | 11
+---------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <UART/FSM_4> on signal <sttCur[1:2]> with user encoding.
+-------------------------
+ State       | Encoding
+-------------------------
+ sttidle     | 00
+ stttransfer | 01
+ sttshift    | 10
+-------------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <UART/FSM_3> on signal <stbeCur[1:2]> with gray encoding.
+---------------------------
+ State         | Encoding
+---------------------------
+ stbeidle      | 00
+ stbesettbe    | 01
+ stbewaitload  | 11
+ stbewaitwrite | 10
+---------------------------
+WARNING:Xst:1293 - FF/Latch <tfSReg_10> has a constant value of 1 in block <Rs232RefComp>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <TMPDGT_1_7> (without init value) has a constant value of 1 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <TMPDGT_0_7> (without init value) has a constant value of 1 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <TMPDGT_2_7> (without init value) has a constant value of 1 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <TMPDGT_3_7> (without init value) has a constant value of 1 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <big_counter_14> of sequential type is unconnected in block <DISPLAY_UNIT>.
+WARNING:Xst:2677 - Node <big_counter_15> of sequential type is unconnected in block <DISPLAY_UNIT>.
+WARNING:Xst:2677 - Node <big_counter_16> of sequential type is unconnected in block <DISPLAY_UNIT>.
+WARNING:Xst:2677 - Node <big_counter_17> of sequential type is unconnected in block <DISPLAY_UNIT>.
+WARNING:Xst:2677 - Node <big_counter_18> of sequential type is unconnected in block <DISPLAY_UNIT>.
+WARNING:Xst:2677 - Node <big_counter_19> of sequential type is unconnected in block <DISPLAY_UNIT>.
+WARNING:Xst:2677 - Node <big_counter_20> of sequential type is unconnected in block <DISPLAY_UNIT>.
+WARNING:Xst:2677 - Node <big_counter_21> of sequential type is unconnected in block <DISPLAY_UNIT>.
+WARNING:Xst:2677 - Node <big_counter_22> of sequential type is unconnected in block <DISPLAY_UNIT>.
+WARNING:Xst:2677 - Node <big_counter_23> of sequential type is unconnected in block <DISPLAY_UNIT>.
+WARNING:Xst:2677 - Node <big_counter_24> of sequential type is unconnected in block <DISPLAY_UNIT>.
+WARNING:Xst:2677 - Node <big_counter_25> of sequential type is unconnected in block <DISPLAY_UNIT>.
+WARNING:Xst:2677 - Node <big_counter_26> of sequential type is unconnected in block <DISPLAY_UNIT>.
+WARNING:Xst:2677 - Node <big_counter_27> of sequential type is unconnected in block <DISPLAY_UNIT>.
+WARNING:Xst:2677 - Node <big_counter_28> of sequential type is unconnected in block <DISPLAY_UNIT>.
+WARNING:Xst:2677 - Node <big_counter_29> of sequential type is unconnected in block <DISPLAY_UNIT>.
+WARNING:Xst:2677 - Node <big_counter_30> of sequential type is unconnected in block <DISPLAY_UNIT>.
+WARNING:Xst:2677 - Node <big_counter_31> of sequential type is unconnected in block <DISPLAY_UNIT>.
+INFO:Xst:2261 - The FF/Latch <rdSig> in Unit <DISPLAY_UNIT> is equivalent to the following FF/Latch, which will be removed : <wrSig> 
+WARNING:Xst:1426 - The value init of the FF/Latch DIGIT_7 hinder the constant cleaning in the block DISPLAY_UNIT.
+   You should achieve better results by setting this init to 1.
+WARNING:Xst:2170 - Unit DISPLAY_UNIT : the following signal(s) form a combinatorial loop: RO2/G11, RO2/G6t, RO2/G23t, RO2/G19.
+
+Optimizing unit <DISPLAY_UNIT> ...
+
+Optimizing unit <Rs232RefComp> ...
+WARNING:Xst:2677 - Node <UART/OE> of sequential type is unconnected in block <DISPLAY_UNIT>.
+WARNING:Xst:2677 - Node <UART/PE> of sequential type is unconnected in block <DISPLAY_UNIT>.
+WARNING:Xst:2677 - Node <UART/FE> of sequential type is unconnected in block <DISPLAY_UNIT>.
+WARNING:Xst:1293 - FF/Latch <NAMEC_8> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_9> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_10> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_11> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_12> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_13> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_14> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_15> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_16> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_17> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_18> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_19> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_20> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_21> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_22> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_23> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_24> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_19> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_20> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_21> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_22> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_23> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_24> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_25> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_26> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_27> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_28> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_29> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_30> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_31> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_4> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_5> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_6> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_7> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_15> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_16> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_17> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_18> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_19> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_20> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_21> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_22> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_23> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_24> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_25> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_26> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_27> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_28> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_29> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_30> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_31> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_25> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_26> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_27> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_28> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_29> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_30> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEC_31> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_4> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_5> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_6> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_7> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_8> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_9> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_10> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_11> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_12> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_13> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMED_14> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_23> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_24> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_25> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_26> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_27> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_28> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_29> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_30> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_31> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_4> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_5> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_6> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_7> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_8> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_9> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_10> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_11> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_6> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_7> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_8> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_9> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_10> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_11> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_12> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_13> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_14> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_15> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_16> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_17> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_18> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_19> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_20> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_21> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <G_22> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_30> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_31> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_4> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_5> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_6> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_7> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_8> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_9> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_10> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_11> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_12> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_13> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_14> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_15> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_16> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_17> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEB_18> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_12> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_13> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_14> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_15> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_16> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_17> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_18> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_19> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_20> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_21> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_22> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_23> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_24> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_25> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_26> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_27> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_28> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <NAMEA_29> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <countR_31> (without init value) has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <UART/clkDiv_8> has a constant value of 0 in block <DISPLAY_UNIT>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <NAMEA_0> in Unit <DISPLAY_UNIT> is equivalent to the following FF/Latch, which will be removed : <NAMEC_0> 
+INFO:Xst:2261 - The FF/Latch <big_counter_0> in Unit <DISPLAY_UNIT> is equivalent to the following FF/Latch, which will be removed : <UART/clkDiv_0> 
+INFO:Xst:2261 - The FF/Latch <big_counter_1> in Unit <DISPLAY_UNIT> is equivalent to the following FF/Latch, which will be removed : <UART/clkDiv_1> 
+INFO:Xst:3203 - The FF/Latch <NAMEA_0> in Unit <DISPLAY_UNIT> is the opposite to the following 2 FFs/Latches, which will be removed : <NAMEB_0> <NAMED_0> 
+INFO:Xst:3203 - The FF/Latch <NAMEA_1> in Unit <DISPLAY_UNIT> is the opposite to the following FF/Latch, which will be removed : <NAMEC_1> 
+INFO:Xst:3203 - The FF/Latch <NAMEB_1> in Unit <DISPLAY_UNIT> is the opposite to the following FF/Latch, which will be removed : <NAMED_1> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block DISPLAY_UNIT, actual ratio is 1.
+
+Final Macro Processing ...
+
+Processing Unit <DISPLAY_UNIT> :
+	Found 3-bit shift register for signal <UART/rdSReg_7>.
+Unit <DISPLAY_UNIT> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 299
+ Flip-Flops                                            : 299
+# Shift Registers                                      : 1
+ 3-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : DISPLAY_UNIT.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 848
+#      GND                         : 1
+#      INV                         : 18
+#      LUT1                        : 129
+#      LUT2                        : 28
+#      LUT3                        : 43
+#      LUT4                        : 137
+#      LUT5                        : 77
+#      LUT6                        : 141
+#      MUXCY                       : 129
+#      MUXF7                       : 12
+#      VCC                         : 1
+#      XORCY                       : 132
+# FlipFlops/Latches                : 301
+#      FD                          : 30
+#      FDC                         : 4
+#      FDCE                        : 98
+#      FDE                         : 90
+#      FDPE                        : 4
+#      FDR                         : 27
+#      FDRE                        : 47
+#      LD                          : 1
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 43
+#      IBUF                        : 4
+#      OBUF                        : 39
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 7a100tcsg324-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             300  out of  126800     0%  
+ Number of Slice LUTs:                  574  out of  63400     0%  
+    Number used as Logic:               573  out of  63400     0%  
+    Number used as Memory:                1  out of  19000     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:    588
+   Number with an unused Flip Flop:     288  out of    588    48%  
+   Number with an unused LUT:            14  out of    588     2%  
+   Number of fully used LUT-FF pairs:   286  out of    588    48%  
+   Number of unique control sets:        34
+
+IO Utilization: 
+ Number of IOs:                          44
+ Number of bonded IOBs:                  44  out of    210    20%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                3  out of     32     9%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 132   |
+RO2/G23t(RO2/G23_lut:O)            | NONE(*)(count_RO_0)    | 64    |
+CLKM                               | BUFG                   | 57    |
+UART/rClkDiv_3                     | NONE(UART/tfCtr_3)     | 16    |
+UART/rClk                          | BUFG                   | 32    |
+UART/stbeCur_FSM_FFd1              | NONE(UART/TBE)         | 1     |
+-----------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 2.691ns (Maximum Frequency: 371.633MHz)
+   Minimum input arrival time before clock: 3.039ns
+   Maximum output required time after clock: 3.754ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 2.691ns (frequency: 371.633MHz)
+  Total number of paths / destination ports: 3838 / 306
+-------------------------------------------------------------------------
+Delay:               2.691ns (Levels of Logic = 2)
+  Source:            Z_11 (FF)
+  Destination:       Z_0 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: Z_11 to Z_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q             2   0.361   0.697  Z_11 (Z_11)
+     LUT6:I0->O            3   0.097   0.703  GND_6_o_Z[31]_equal_101_o<31>11 (GND_6_o_Z[31]_equal_101_o<31>11)
+     LUT6:I0->O           33   0.097   0.386  _n0444 (_n0444)
+     FDRE:R                    0.349          Z_0
+    ----------------------------------------
+    Total                      2.691ns (0.904ns logic, 1.787ns route)
+                                       (33.6% logic, 66.4% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'RO2/G23t'
+  Clock period: 2.178ns (frequency: 459.031MHz)
+  Total number of paths / destination ports: 560 / 64
+-------------------------------------------------------------------------
+Delay:               2.178ns (Levels of Logic = 33)
+  Source:            count_RO_t_0 (FF)
+  Destination:       count_RO_t_31 (FF)
+  Source Clock:      RO2/G23t rising
+  Destination Clock: RO2/G23t rising
+
+  Data Path: count_RO_t_0 to count_RO_t_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             2   0.361   0.283  count_RO_t_0 (count_RO_t_0)
+     INV:I->O              1   0.113   0.000  Mcount_count_RO_t_lut<0>_INV_0 (Mcount_count_RO_t_lut<0>)
+     MUXCY:S->O            1   0.353   0.000  Mcount_count_RO_t_cy<0> (Mcount_count_RO_t_cy<0>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<1> (Mcount_count_RO_t_cy<1>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<2> (Mcount_count_RO_t_cy<2>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<3> (Mcount_count_RO_t_cy<3>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<4> (Mcount_count_RO_t_cy<4>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<5> (Mcount_count_RO_t_cy<5>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<6> (Mcount_count_RO_t_cy<6>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<7> (Mcount_count_RO_t_cy<7>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<8> (Mcount_count_RO_t_cy<8>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<9> (Mcount_count_RO_t_cy<9>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<10> (Mcount_count_RO_t_cy<10>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<11> (Mcount_count_RO_t_cy<11>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<12> (Mcount_count_RO_t_cy<12>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<13> (Mcount_count_RO_t_cy<13>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<14> (Mcount_count_RO_t_cy<14>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<15> (Mcount_count_RO_t_cy<15>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<16> (Mcount_count_RO_t_cy<16>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<17> (Mcount_count_RO_t_cy<17>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<18> (Mcount_count_RO_t_cy<18>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<19> (Mcount_count_RO_t_cy<19>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<20> (Mcount_count_RO_t_cy<20>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<21> (Mcount_count_RO_t_cy<21>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<22> (Mcount_count_RO_t_cy<22>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<23> (Mcount_count_RO_t_cy<23>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<24> (Mcount_count_RO_t_cy<24>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<25> (Mcount_count_RO_t_cy<25>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<26> (Mcount_count_RO_t_cy<26>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<27> (Mcount_count_RO_t_cy<27>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<28> (Mcount_count_RO_t_cy<28>)
+     MUXCY:CI->O           1   0.023   0.000  Mcount_count_RO_t_cy<29> (Mcount_count_RO_t_cy<29>)
+     MUXCY:CI->O           0   0.023   0.000  Mcount_count_RO_t_cy<30> (Mcount_count_RO_t_cy<30>)
+     XORCY:CI->O           1   0.370   0.000  Mcount_count_RO_t_xor<31> (Result<31>8)
+     FDCE:D                    0.008          count_RO_t_31
+    ----------------------------------------
+    Total                      2.178ns (1.895ns logic, 0.283ns route)
+                                       (87.0% logic, 13.0% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLKM'
+  Clock period: 2.299ns (frequency: 434.881MHz)
+  Total number of paths / destination ports: 849 / 112
+-------------------------------------------------------------------------
+Delay:               2.299ns (Levels of Logic = 2)
+  Source:            G_5 (FF)
+  Destination:       NAMEA_0 (FF)
+  Source Clock:      CLKM rising
+  Destination Clock: CLKM rising
+
+  Data Path: G_5 to NAMEA_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.361   0.697  G_5 (G_5)
+     LUT6:I0->O           49   0.097   0.405  GND_6_o_G[31]_equal_120_o<31>1 (GND_6_o_G[31]_equal_120_o)
+     LUT5:I4->O            4   0.097   0.293  _n04481 (_n0448)
+     FDRE:R                    0.349          NAMEA_0
+    ----------------------------------------
+    Total                      2.299ns (0.904ns logic, 1.395ns route)
+                                       (39.3% logic, 60.7% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UART/rClkDiv_3'
+  Clock period: 1.309ns (frequency: 764.000MHz)
+  Total number of paths / destination ports: 61 / 30
+-------------------------------------------------------------------------
+Delay:               1.309ns (Levels of Logic = 1)
+  Source:            UART/sttCur_FSM_FFd1 (FF)
+  Destination:       UART/tfSReg_9 (FF)
+  Source Clock:      UART/rClkDiv_3 rising
+  Destination Clock: UART/rClkDiv_3 rising
+
+  Data Path: UART/sttCur_FSM_FFd1 to UART/tfSReg_9
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             13   0.361   0.435  UART/sttCur_FSM_FFd1 (UART/sttCur_FSM_FFd1)
+     LUT2:I0->O           10   0.097   0.321  UART/_n0172_inv1 (UART/_n0172_inv)
+     FDE:CE                    0.095          UART/tfSReg_0
+    ----------------------------------------
+    Total                      1.309ns (0.553ns logic, 0.756ns route)
+                                       (42.2% logic, 57.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'UART/rClk'
+  Clock period: 1.904ns (frequency: 525.182MHz)
+  Total number of paths / destination ports: 201 / 60
+-------------------------------------------------------------------------
+Delay:               1.904ns (Levels of Logic = 2)
+  Source:            UART/ctr_1 (FF)
+  Destination:       UART/ctr_3 (FF)
+  Source Clock:      UART/rClk rising
+  Destination Clock: UART/rClk rising
+
+  Data Path: UART/ctr_1 to UART/ctr_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              8   0.361   0.411  UART/ctr_1 (UART/ctr_1)
+     LUT2:I0->O            1   0.097   0.295  UART/ctRst_SW0 (N21)
+     LUT6:I5->O            4   0.097   0.293  UART/ctRst (UART/ctRst)
+     FDR:R                     0.349          UART/ctr_0
+    ----------------------------------------
+    Total                      1.904ns (0.904ns logic, 1.000ns route)
+                                       (47.5% logic, 52.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 47 / 47
+-------------------------------------------------------------------------
+Offset:              1.275ns (Levels of Logic = 2)
+  Source:            RST (PAD)
+  Destination:       St_indic_0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: RST to St_indic_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            51   0.001   0.793  RST_IBUF (RST_IBUF)
+     LUT5:I0->O            3   0.097   0.289  _n0644_inv1 (_n0644_inv)
+     FDE:CE                    0.095          St_indic_0
+    ----------------------------------------
+    Total                      1.275ns (0.193ns logic, 1.082ns route)
+                                       (15.1% logic, 84.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLKM'
+  Total number of paths / destination ports: 1878 / 28
+-------------------------------------------------------------------------
+Offset:              3.039ns (Levels of Logic = 5)
+  Source:            REF (PAD)
+  Destination:       TMPDGT_2_0 (FF)
+  Destination Clock: CLKM rising
+
+  Data Path: REF to TMPDGT_2_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            57   0.001   0.667  REF_IBUF (REF_IBUF)
+     LUT4:I0->O            7   0.097   0.721  Mmux_n037221 (n0372<1>)
+     LUT6:I0->O            4   0.097   0.570  CONV1/Mram_Y11 (CONV1/Mram_Y)
+     LUT5:I1->O            1   0.097   0.683  Mmux_NAMEC[3]_NAME[15][7]_wide_mux_128_OUT22 (Mmux_NAMEC[3]_NAME[15][7]_wide_mux_128_OUT21)
+     LUT6:I1->O            1   0.097   0.000  Mmux_NAMEC[3]_NAME[15][7]_wide_mux_128_OUT24 (NAMEC[3]_NAME[15][7]_wide_mux_128_OUT<0>)
+     FDE:D                     0.008          TMPDGT_2_0
+    ----------------------------------------
+    Total                      3.039ns (0.397ns logic, 2.642ns route)
+                                       (13.1% logic, 86.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UART/rClk'
+  Total number of paths / destination ports: 17 / 17
+-------------------------------------------------------------------------
+Offset:              1.443ns (Levels of Logic = 2)
+  Source:            RXD (PAD)
+  Destination:       UART/ctr_3 (FF)
+  Destination Clock: UART/rClk rising
+
+  Data Path: RXD to UART/ctr_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   0.001   0.703  RXD_IBUF (RXD_IBUF)
+     LUT6:I0->O            4   0.097   0.293  UART/ctRst (UART/ctRst)
+     FDR:R                     0.349          UART/ctr_0
+    ----------------------------------------
+    Total                      1.443ns (0.447ns logic, 0.996ns route)
+                                       (31.0% logic, 69.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'UART/rClkDiv_3'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              0.739ns (Levels of Logic = 1)
+  Source:            RST (PAD)
+  Destination:       UART/sttCur_FSM_FFd2 (FF)
+  Destination Clock: UART/rClkDiv_3 rising
+
+  Data Path: RST to UART/sttCur_FSM_FFd2
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            51   0.001   0.389  RST_IBUF (RST_IBUF)
+     FDR:R                     0.349          UART/sttCur_FSM_FFd1
+    ----------------------------------------
+    Total                      0.739ns (0.350ns logic, 0.389ns route)
+                                       (47.4% logic, 52.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 125 / 25
+-------------------------------------------------------------------------
+Offset:              3.754ns (Levels of Logic = 5)
+  Source:            tv_19 (FF)
+  Destination:       LEDS<0> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: tv_19 to LEDS<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             4   0.361   0.525  tv_19 (tv_19)
+     LUT3:I0->O            1   0.097   0.295  RO2/Mmux_G6t11 (RO2/G6t)
+     LUT2:I1->O            2   0.495   0.299  RO2/G11_lut (RO2/G11)
+     LUT2:I1->O            2   0.495   0.299  RO2/G16_lut (RO2/G16)
+     LUT2:I1->O           68   0.495   0.392  RO2/G23_lut (RO2/G23t)
+     OBUF:I->O                 0.000          LEDS_0_OBUF (LEDS<0>)
+    ----------------------------------------
+    Total                      3.754ns (1.943ns logic, 1.811ns route)
+                                       (51.8% logic, 48.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLKM'
+  Total number of paths / destination ports: 12 / 12
+-------------------------------------------------------------------------
+Offset:              0.677ns (Levels of Logic = 1)
+  Source:            TEMP_FSM_FFd1 (FF)
+  Destination:       ANODE<3> (PAD)
+  Source Clock:      CLKM rising
+
+  Data Path: TEMP_FSM_FFd1 to ANODE<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               9   0.361   0.316  TEMP_FSM_FFd1 (TEMP_FSM_FFd1)
+     OBUF:I->O                 0.000          ANODE_3_OBUF (ANODE<3>)
+    ----------------------------------------
+    Total                      0.677ns (0.361ns logic, 0.316ns route)
+                                       (53.3% logic, 46.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'UART/rClk'
+  Total number of paths / destination ports: 56 / 7
+-------------------------------------------------------------------------
+Offset:              1.904ns (Levels of Logic = 3)
+  Source:            UART/rdReg_1 (FF)
+  Destination:       seg_out<3> (PAD)
+  Source Clock:      UART/rClk rising
+
+  Data Path: UART/rdReg_1 to seg_out<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             27   0.361   0.485  UART/rdReg_1 (UART/rdReg_1)
+     LUT5:I3->O            7   0.097   0.584  Mmux_temps<1>11 (temps<1>)
+     LUT4:I0->O            1   0.097   0.279  Mram_seg_out12 (seg_out_0_OBUF)
+     OBUF:I->O                 0.000          seg_out_0_OBUF (seg_out<0>)
+    ----------------------------------------
+    Total                      1.904ns (0.555ns logic, 1.349ns route)
+                                       (29.2% logic, 70.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'UART/rClkDiv_3'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              0.640ns (Levels of Logic = 1)
+  Source:            UART/tfSReg_0 (FF)
+  Destination:       TXD (PAD)
+  Source Clock:      UART/rClkDiv_3 rising
+
+  Data Path: UART/tfSReg_0 to TXD
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              1   0.361   0.279  UART/tfSReg_0 (UART/tfSReg_0)
+     OBUF:I->O                 0.000          TXD_OBUF (TXD)
+    ----------------------------------------
+    Total                      0.640ns (0.361ns logic, 0.279ns route)
+                                       (56.4% logic, 43.6% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock CLKM
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLKM           |    2.299|         |         |         |
+RO2/G23t       |    3.151|         |         |         |
+clk            |    6.088|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock RO2/G23t
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+RO2/G23t       |    2.178|         |         |         |
+clk            |    4.730|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UART/rClk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+UART/rClk      |    1.904|         |         |         |
+clk            |    1.480|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UART/rClkDiv_3
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+UART/rClkDiv_3       |    1.309|         |         |         |
+UART/stbeCur_FSM_FFd1|    1.098|         |         |         |
+clk                  |    1.419|         |         |         |
+---------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock UART/stbeCur_FSM_FFd1
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |    0.847|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------------+---------+---------+---------+---------+
+                     | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock         |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------+---------+---------+---------+---------+
+UART/rClk            |    3.613|         |         |         |
+UART/rClkDiv_3       |    0.882|         |         |         |
+UART/stbeCur_FSM_FFd1|    1.442|         |         |         |
+clk                  |    2.691|         |         |         |
+---------------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 13.00 secs
+Total CPU time to Xst completion: 13.28 secs
+ 
+--> 
+
+Total memory usage is 447916 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  188 (   0 filtered)
+Number of infos    :   16 (   0 filtered)
+

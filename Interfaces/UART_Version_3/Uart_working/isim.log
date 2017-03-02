@@ -1,0 +1,63 @@
+ISim log file
+Running: C:\Users\Steyr\Documents\FPNN\C17UART+Trojan\Vin\Rs232RefComp_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/Steyr/Documents/FPNN/C17UART+Trojan/Vin/Rs232RefComp_isim_beh.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# isim force add /rs232refcomp/clk 1 -radix hex -value 0 -radix hex -time 25 ns -repeat 50 ns
+# isim force add /rs232refcomp/rd 0 -radix hex
+# isim force add /rs232refcomp/wr 0 -radix hex
+# isim force add /rs232refcomp/rst 1 -radix hex
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# isim force add /rs232refcomp/rst 0 -radix hex
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# isim force add /rs232refcomp/rclk 1 -radix hex -value 0 -radix hex -time 25 ns -repeat 50 ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns
+# run 100ns

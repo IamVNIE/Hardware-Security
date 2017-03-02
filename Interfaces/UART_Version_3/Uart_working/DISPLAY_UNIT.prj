@@ -1,0 +1,6 @@
+vhdl work "RS232RefComp.vhd"
+vhdl work "hex2LED - Copy.vhd"
+vhdl work "HEX2ASC.vhd"
+vhdl work "Circuit17.vhd"
+vhdl work "ascii_hex.vhd"
+vhdl work "des_decrypt_wit_out - Copy.vhd"
