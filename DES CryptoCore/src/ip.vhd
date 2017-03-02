@@ -1,0 +1,21 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity ip is port
+(
+ct : in std_logic_vector(1 TO 64);
+l0x : out std_logic_vector(1 TO 32);
+r0x : out std_logic_vector(1 TO 32)
+);
+end ip;
+architecture behavior of ip is
+begin
+l0x(1)<=ct(58); l0x(2)<=ct(50); l0x(3)<=ct(42); l0x(4)<=ct(34); l0x(5)<=ct(26); l0x(6)<=ct(18); l0x(7)<=ct(10); l0x(8)<=ct(2);
+l0x(9)<=ct(60); l0x(10)<=ct(52); l0x(11)<=ct(44); l0x(12)<=ct(36); l0x(13)<=ct(28); l0x(14)<=ct(20); l0x(15)<=ct(12); l0x(16)<=ct(4);
+l0x(17)<=ct(62); l0x(18)<=ct(54); l0x(19)<=ct(46); l0x(20)<=ct(38); l0x(21)<=ct(30); l0x(22)<=ct(22); l0x(23)<=ct(14); l0x(24)<=ct(6);
+l0x(25)<=ct(64); l0x(26)<=ct(56); l0x(27)<=ct(48); l0x(28)<=ct(40); l0x(29)<=ct(32); l0x(30)<=ct(24); l0x(31)<=ct(16); l0x(32)<=ct(8);
+
+r0x(1)<=ct(57); r0x(2)<=ct(49); r0x(3)<=ct(41); r0x(4)<=ct(33); r0x(5)<=ct(25); r0x(6)<=ct(17); r0x(7)<=ct(9); r0x(8)<=ct(1);
+r0x(9)<=ct(59); r0x(10)<=ct(51); r0x(11)<=ct(43); r0x(12)<=ct(35); r0x(13)<=ct(27); r0x(14)<=ct(19); r0x(15)<=ct(11); r0x(16)<=ct(3);
+r0x(17)<=ct(61); r0x(18)<=ct(53); r0x(19)<=ct(45); r0x(20)<=ct(37); r0x(21)<=ct(29); r0x(22)<=ct(21); r0x(23)<=ct(13); r0x(24)<=ct(5);
+r0x(25)<=ct(63); r0x(26)<=ct(55); r0x(27)<=ct(47); r0x(28)<=ct(39); r0x(29)<=ct(31); r0x(30)<=ct(23); r0x(31)<=ct(15); r0x(32)<=ct(7);
+end behavior;
