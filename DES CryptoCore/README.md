@@ -12,13 +12,13 @@
 			|--DES_TOP_FILE.vhd: Top VHDL model describing DES
 			|--test_vectors (folder)
 					|
-					|-DES_test_vectors.txt: Test vectors to test faults for different sub-blocks of DES
-					|-DES_TV_Triplets_NBS.txt: This file is used by the testbench. 
+					|--DES_test_vectors.txt: Test vectors to test faults for different sub-blocks of DES
+					|--DES_TV_Triplets_NBS.txt: This file is used by the testbench. 
 											   Testbenches currently cannot any comments in the file.
 			|--test_benches (folder)
 					|
-					|-DES_Decrypt_TestBench.vhd
-					|-DES_Encrypt_TestBench
+					|--DES_Decrypt_TestBench.vhd
+					|--DES_Encrypt_TestBench
 					
 ## DES USAGE
 		Import all the files in src. Change Testbench files association to Simulation only in Hierarchy Window
