@@ -13,7 +13,8 @@
 		https://www.youtube.com/watch?v=xrpPpvORaIA
 
 ## DES Crypto Core
-		Implements DES using mostly structural modelling. This core is completely parallel. 
+		Implements DES using mostly structural modelling. 
+		This core is completely parallel. 
 		New data can be pushed to the system every clock cycle.
 		Latency = 19 Cycles
 
