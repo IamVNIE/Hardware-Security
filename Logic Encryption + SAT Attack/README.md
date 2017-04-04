@@ -17,7 +17,7 @@
 		execute command: make all
 		
 ## Usage
-		All executables are Found in $UNZIP_FOLDER/logic_encyption/source/src/ folder
+		All executables are Found in $UNZIP_FOLDER/logic_encyption/bin/ folder
 		Logic Encryption: ./sle -r1 -f0.05 ../../benchmarks/original/c880.bench >& myTest/c880_enc05.bench
 		Logic Decryption: ./sld ../../benchmarks/rnd/c880_enc50.bench ../../benchmarks/original/c880.bench
 		
