@@ -21,7 +21,7 @@
 		Logic Encryption: ./sle -r1 -f0.05 ../../benchmarks/original/c880.bench >& myTest/c880_enc05.bench
 		Logic Decryption: ./sld ../../benchmarks/rnd/c880_enc50.bench ../../benchmarks/original/c880.bench
 		
-## SLE Usage:
+## SLE Usage(Space after the switch is optional to specify Value):
 		    -r 1 -k <keys> to do random insertion.
 			-r 1 -f <fraction> to do random insertion.
 			-t -f <fraction> <bench> to dump the fault impact files.
