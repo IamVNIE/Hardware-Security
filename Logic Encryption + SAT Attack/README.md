@@ -20,6 +20,15 @@
 		All executables are Found in $UNZIP_FOLDER/logic_encyption/source/src/ folder
 		Logic Encryption: ./sle -r1 -f0.05 ../../benchmarks/original/c880.bench >& myTest/c880_enc05.bench
 		Logic Decryption: ./sld ../../benchmarks/rnd/c880_enc50.bench ../../benchmarks/original/c880.bench
+		
+## SLE Usage:
+		    -r 1 -k <keys> to do random insertion.
+			-r 1 -f <fraction> to do random insertion.
+			-t -f <fraction> <bench> to dump the fault impact files.
+			-t -f <fraction> -s <bench> to dump the fault impact files and for mux encoding
+			-t -f <fraction> -T <faultimpact> -o <output> <bench> : to encode using fault impact.
+			-t -f <fraction> -s -T <faultimpact> -o <output> <bench> : to encode using fault impact with muxes.
+			-i -f <fraction> -i -o <output> <bench> : to encode using the IOLTS technique]
 
 ## Understanding and Using SAT TOOL: 		
 		1. Learning how SAT works
