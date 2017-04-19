@@ -12,6 +12,20 @@
 
 		https://www.youtube.com/watch?v=xrpPpvORaIA
 
+## PUF Lab
+
+### Ring_Oscillator_Generator
+		Implements RO using structural modelling. 
+		Allows users to specify the number of elements in RO Path. Change RO_ChainLength in VHDL File.
+		Allows user to control the placement of RO in any part of FPGA using UCF File.
+		(For even greater control over placement.. see Lab 1 document) 	
+		
+### Ring_Oscillator_Generator Folder Organization 
+		--Ring_Ocillator_VHDL_Code
+			|
+			|--RO_GENIE.vhd (Main VHDL file describing RO)
+			|--RO_GENIE.ucf (UCF File to control placement of the RO)
+			
 ## DES Crypto Core
 		Implements DES using mostly structural modelling. 
 		This core is completely parallel. 

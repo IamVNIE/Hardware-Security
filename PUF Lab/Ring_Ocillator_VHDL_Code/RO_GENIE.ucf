@@ -1,0 +1,3 @@
+## This area group constraint helps to place a RO in a particular area of FPGA
+## Make sure you dont place in illegal area 
+INST "RO_GENIE*" AREA_GROUP = RO_PLACEMENT1;  AREA_GROUP "RO_PLACEMENT1" RANGE = SLICE_X58Y0:SLICE_X65Y10;
