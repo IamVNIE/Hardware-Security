@@ -4,13 +4,21 @@ Ramkumar Ranjithkumar, Qasim Idrees
 
 # Switches Used:
 J15: Reset
+
 L16: Enable
+
 M13: C1<0>
+
 R15: C1<1>
+
 R17: C1<2>
+
 T18: C2<0>
+
 U18: C2<1>
+
 R13: C2<2>
+
 H17: LED
 
 Program the Bit File in FPGA. There are 8 Ring Oscillators in the PUF and so there are possible 28 Combinations to compare the count value. Select one of the PUFs using the switches for C2 and the other from C1. Then trigger the Reset Pin from 0 to 1 and then Enable from 0 to 1. The Rightmost LED gives the output.
